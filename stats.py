@@ -17,3 +17,8 @@ def count_characters(text):
             char_count[lower_char] = 1
 
     return char_count
+
+
+def sort_characters(dictionary):
+    "Sorts the characters in a dictionary by their frequency"
+    return dict(sorted(dictionary.items(), key=lambda item: item[1], reverse=True))
